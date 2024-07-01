@@ -4,8 +4,7 @@
  */
 $.validator.addMethod( "cnhBR", function( value, element ) {
   
-  // Field not required
-  if ( value.length === 0 && this.optional( element ) ) {
+  if ( this.optional( element ) ) {
 	return true;
   }
 	
